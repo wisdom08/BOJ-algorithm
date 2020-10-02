@@ -1,20 +1,25 @@
-package easy;
+package io;
 
 import java.util.Scanner;
 
-public class Main07 {
+public class Main11 {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
 
         int testNum = sc.nextInt();
+
+        int[] arr = new int[testNum];
         int sum = 0;
+
+        String input = sc.next();
+
         for (int i = 0; i < testNum; i++) {
-            int num1 = sc.nextInt();
-            int num2 = sc.nextInt();
-            sum = num1 + num2;
-            System.out.println("Case #"+(i+1)+": "+sum);
+            sum += input.charAt(i) -'0';
         }
+
+        System.out.println(sum);
+
+
     }
 }

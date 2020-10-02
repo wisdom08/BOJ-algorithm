@@ -1,18 +1,16 @@
-package easy;
+package io;
 
 import java.util.Scanner;
 
-public class Main13 {
+public class Main10 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int startNum = sc.nextInt();
-
-        for (int i = startNum; i > 0; i--) {
-            System.out.println(i);
+        while (sc.hasNextLine()) {
+            String input = sc.nextLine();
+            System.out.println(input);
         }
         sc.close();
-
     }
 }
